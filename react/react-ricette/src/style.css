@@ -1,0 +1,13 @@
+:root {
+    --color-primary: #42033D;
+}
+
+.table-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.background-navbar {
+    background-color: var(--color-primary);
+}
