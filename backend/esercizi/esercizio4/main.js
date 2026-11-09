@@ -15,10 +15,10 @@ app.get('/recipes/:id', (req, res) => {
     if (isNaN(id)) 
         res.status(400).json({
             success: false,
-            error: "id has to be a integer number"
+            error: "id has to be an integer number"
         })
     
-    const recipe = recipes.find(recipe => recipe.id == id)
+    const recipe = recipes.find(recipe => recipe.id === id)
     
     if (!recipe)
         res.status(404).json({
